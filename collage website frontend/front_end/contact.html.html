@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html.html">COURSE</a></li>
+                    <li><a href="blog.html.html">BLOG</a></li>
+                    <li><a href="contact.html.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact us </h1>
+      
+    </section>
+    <!--------------contact us----->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30977.482032429198!2d75.50927963955077!3d13.9475726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbba5f8bb1f390b%3A0xfd333dc4870822e6!2sBcm%20Engg%20And%20Medical%20Boys%20Hostel%20malligenahalli!5e0!3m2!1sen!2sin!4v1731336864422!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col"> 
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ road,ABC building</h5>
+                        <p>shivamogga, karnataka, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>monday to saturday,10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>suchith324@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="enter your name" required>
+                    <input type="text" name="email" placeholder="enter email address" required>
+                    <input type="text" name="subject" placeholder="enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">send message</button>
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    
+    
+    <!-------footer-------->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Applicants must have completed intermediate education (Class 12 or equivalent) from a recognized board with required minimum marks in relevant subjects. Admission requires <br>submission of transcripts, certificates, and other necessary documents. Program-specific eligibility criteria may apply.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-instagram"></i> 
+            <i class="fa fa-linkedin "></i>  
+        </div>
+        <P>Made with <i class="fa fa-heart-o"></i> Easy Tutorials </P>
+    </section>
+
+
+    <!------- JavaScript for toggle menu ------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

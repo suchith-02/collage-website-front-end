@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html.html">COURSE</a></li>
+                    <li><a href="blog.html.html">BLOG</a></li>
+                    <li><a href="contact.html.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>our courses</h1>
+      
+    </section>
+    <!--------------courses----->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Applicants must have completed intermediate education (Class 12 or equivalent) from a recognized board with required minimum marks in relevant subjects. Admission requires submission of transcripts, certificates, and other necessary documents. Program-specific eligibility criteria may apply.</p>
+        </div>
+        
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>The Bachelor's in Computer Science is designed to equip students with a strong foundation in software development, data structures, and artificial intelligence. Through a blend of theoretical knowledge and practical applications, students will develop essential skills for solving complex problems.</p>
+        </div>
+        
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>The Master’s in Computer Science offers advanced study in areas such as machine learning, software engineering, and cybersecurity. Students engage in cutting-edge research and practical projects, enhancing their analytical and problem-solving skills.</p>
+        </div>
+    </section>
+
+    <!-------------facilities ------->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+        <div class="row">
+           <div class="facilities-col">
+             <img src="images/clg1.png.png" alt="World Class Library">
+             <h3>World Class Library</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+           <div class="facilities-col">
+             <img src="images/clg2.png.png" alt="World Class Library">
+             <h3>largest play ground</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div> 
+           <div class="facilities-col">
+             <img src="images/college.jpg" alt="World Class Library">
+             <h3>tasty and healthy food</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>  
+        </div>
+    </section>
+
+    
+    <!-------footer-------->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Applicants must have completed intermediate education (Class 12 or equivalent) from a recognized board with required minimum marks in relevant subjects. Admission requires <br>submission of transcripts, certificates, and other necessary documents. Program-specific eligibility criteria may apply.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-instagram"></i> 
+            <i class="fa fa-linkedin "></i>  
+        </div>
+        <P>Made with <i class="fa fa-heart-o"></i> Easy Tutorials </P>
+    </section>
+
+
+    <!------- JavaScript for toggle menu ------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
