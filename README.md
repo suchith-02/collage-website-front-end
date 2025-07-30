@@ -1,1 +1,1 @@
-# collage-website-front-end
+# collage-website-frontend
